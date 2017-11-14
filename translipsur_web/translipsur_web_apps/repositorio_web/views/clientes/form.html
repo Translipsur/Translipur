@@ -1,0 +1,77 @@
+<div ng-cloak>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <form name="dForm" role="form" ng-controller="ClienteSaveCtrl">
+                <md-card>
+                    <md-card-header>
+                        <md-card-avatar>
+                            <img class="md-user-avatar" src="media/img/list/Cliente.jpg" />
+                        </md-card-avatar>
+                        <md-card-header-text>
+                           
+                            <span class="md-headline">Cliente</span>
+                            <span class="md-subhead">Trabajar con Clientes</span>
+                        </md-card-header-text>
+                    </md-card-header>
+                    <md-card-content>
+                        <div layout-gt-sm="row">
+                            
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Descripcion</label>
+                                <input name="descripcion" ng-model="cliente.descripcion" required>
+                                <div ng-messages="dForm.descripcion.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            
+                                                        
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Persona</label>
+                                 <md-autocomplete
+                                      md-search-text="q"
+                                      md-item-text = "item.nombre"
+                                      md-selected-item-change="selectPersona(item)"
+                                      md-items="item in buscarPersona(q)"
+                                      md-min-length="1"
+                                      placeholder="Busque una persona">
+                                    <md-item-template>
+                                      <span md-highlight-text="q" md-highlight-flags="^i">{{item.nombre}}</span>
+                                    </md-item-template>
+                                    <md-not-found>
+                                      No states matching "{{q}}" were found.
+                                    </md-not-found>
+                                  </md-autocomplete>
+                            </md-input-container>
+
+                            
+                            <md-input-container class="md-block">
+                                <md-checkbox ng-model="cliente.estado" aria-label="Estado">
+                                    Estado
+                                </md-checkbox>
+                            </md-input-container>
+
+                            
+                            
+                            
+                            
+                        </div>
+                        
+                    </md-card-content>
+                    <md-divider></md-divider>
+                    <md-card-actions layout="row" layout-xs="column" layout-align="start center">
+                        <md-card-icon-actions>
+                            <md-button class="md-icon-button" aria-label="toggle">
+                                <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                            </md-button>
+                        </md-card-icon-actions>
+                        <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
+                        <md-button type="submit" ng-click="save()" class="md-raised md-primary">
+                            <span ng-show="cliente.id == null">Create</span>
+                            <span ng-show="cliente.id">Update</span>
+                        </md-button>
+                    </md-card-actions>
+                </md-card>
+            </form>
+        </div>
+    </md-content>
+</div>

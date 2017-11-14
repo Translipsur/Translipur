@@ -1,0 +1,166 @@
+<div ng-cloak>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <form name="dForm" role="form" ng-controller="UnidadSaveCtrl">
+                <md-card>
+                    <md-card-header>
+                        <md-card-avatar>
+                            <img class="md-user-avatar" src="media/img/list/unidad.jpg" />
+                        </md-card-avatar>
+                        <md-card-header-text>
+                           
+                            <span class="md-headline">Unidad</span>
+                            <span class="md-subhead">Trabajar con Unidades</span>
+                        </md-card-header-text>
+                    </md-card-header>
+                    <md-card-content>
+                        <div layout-gt-sm="row">
+                            
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>MARCA</label>
+                                <input name="marca" ng-model="unidad.marca" required>
+                                <div ng-messages="dForm.marca.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>PLACA</label>
+                                <input name="placa" ng-model="unidad.placa">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>COLOR</label>
+                                <input name="color" ng-model="unidad.color">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>TIPO DE COMBUSTIBLE</label>
+                                <input name="tipo_combustible" ng-model="unidad.tipo_combustible">
+                            </md-input-container>
+                        </div>
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>RUEDAS</label>
+                                <input name="ruedas" ng-model="unidad.ruedas">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>ALTURA</label>
+                                <input name="altura" ng-model="unidad.altura">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>ANCHO</label>
+                                <input name="ancho" ng-model="unidad.ancho">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>TIPO</label>
+                                <input name="tipo" ng-model="unidad.tipo">
+                            </md-input-container>
+
+                        </div>
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>CILINDROS</label>
+                                <input name="cilindros" ng-model="unidad.cilindros">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>EJES</label>
+                                <input name="ejes" ng-model="unidad.ejes">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>NUMERO DE MOTOR</label>
+                                <input name="nro_motor" ng-model="unidad.nro_motor">
+                            </md-input-container>                            
+                            
+                            
+                        </div>
+
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>KM RECORRIDOS</label>
+                                <input name="km_recorrido" ng-model="unidad.km_recorrido">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>AÑO MODELO</label>
+                                <input name="ano_modelo" ng-model="unidad.ano_modelo">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>ASIENTOS</label>
+                                <input name="asientos" ng-model="unidad.asientos">
+                            </md-input-container>                            
+                            
+                            
+                        </div>
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>CARGA UTIL</label>
+                                <input name="carga_util" ng-model="unidad.carga_util">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>LONGITUD</label>
+                                <input name="longitud" ng-model="unidad.longitud">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>NUMERO SERIE</label>
+                                <input name="nro_serie" ng-model="unidad.nro_serie">
+                            </md-input-container>                            
+                            
+                            
+                        </div>
+
+                        <div layout-gt-sm="row">
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>PASAJEROS</label>
+                                <input name="pasajeros" ng-model="unidad.pasajeros">
+                            </md-input-container>
+
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>PESO BRUTO</label>
+                                <input name="peso_bruto" ng-model="unidad.peso_bruto">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>PESO SECO</label>
+                                <input name="peso_seco" ng-model="unidad.peso_seco">
+                            </md-input-container>                            
+                            
+                            
+                        </div>
+                    </md-card-content>
+                    <md-divider></md-divider>
+                    <md-card-actions layout="row" layout-xs="column" layout-align="start center">
+                        <md-card-icon-actions>
+                            <md-button class="md-icon-button" aria-label="toggle">
+                                <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                            </md-button>
+                        </md-card-icon-actions>
+                        <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
+                        <md-button type="submit" ng-click="save()" class="md-raised md-primary">
+                            <span ng-show="unidad.id == null">Create</span>
+                            <span ng-show="unidad.id">Update</span>
+                        </md-button>
+                    </md-card-actions>
+                </md-card>
+            </form>
+        </div>
+    </md-content>
+</div>

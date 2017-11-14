@@ -1,0 +1,67 @@
+<div ng-cloak>
+    <md-content class="md-padding" layout-xs="column" layout="row">
+        <div flex-xs flex-gt-xs="100" layout="column">
+            <form name="dForm" role="form" ng-controller="RutaSaveCtrl">
+                <md-card>
+                    <md-card-header>
+                        <md-card-avatar>
+                            <img class="md-user-avatar" src="media/img/list/Ruta.jpg" />
+                        </md-card-avatar>
+                        <md-card-header-text>
+                           
+                            <span class="md-headline">Ruta</span>
+                            <span class="md-subhead">Trabajar con Rutas</span>
+                        </md-card-header-text>
+                    </md-card-header>
+                    <md-card-content>
+                        <div layout-gt-sm="row">
+                            
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Detalle</label>
+                                <input name="detalle" ng-model="ruta.detalle" required>
+                                <div ng-messages="dForm.detalle.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Distancia en Km</label>
+                                <input name="distancia_km" ng-model="ruta.distancia_km">
+                            </md-input-container>
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Lugar Origen</label>
+                                <input name="lugar_origen" ng-model="ruta.lugar_origen">
+                            </md-input-container>
+                            
+
+                            <md-input-container class="md-block" flex-gt-sm>
+                                <label>Lugar Destino</label>
+                                <input name="lugar_destino" ng-model="ruta.lugar_destino">
+                            </md-input-container>
+                            
+                            
+
+                            
+                            
+                        </div>
+                        
+                    </md-card-content>
+                    <md-divider></md-divider>
+                    <md-card-actions layout="row" layout-xs="column" layout-align="start center">
+                        <md-card-icon-actions>
+                            <md-button class="md-icon-button" aria-label="toggle">
+                                <md-icon md-svg-icon="md-toggle-arrow"></md-icon>
+                            </md-button>
+                        </md-card-icon-actions>
+                        <md-button type="reset" ng-click="cancel()" class="md-raised">Cancel</md-button>
+                        <md-button type="submit" ng-click="save()" class="md-raised md-primary">
+                            <span ng-show="ruta.id == null">Create</span>
+                            <span ng-show="ruta.id">Update</span>
+                        </md-button>
+                    </md-card-actions>
+                </md-card>
+            </form>
+        </div>
+    </md-content>
+</div>

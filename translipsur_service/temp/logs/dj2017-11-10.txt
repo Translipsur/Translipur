@@ -1,0 +1,1090 @@
+[2017-11-10 20:06:25] DEBUG [django.db.backends:90] (0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-11-10 20:06:25] DEBUG [django.db.backends:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-11-10 20:07:12] WARNING [django.server:131] "GET /api/auths/localuserinfo/ HTTP/1.1" 401 65
+[2017-11-10 20:07:12] WARNING [django.server:131] "GET /api/auths/usermenu/ HTTP/1.1" 401 65
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\repositorio_api\\\\urls.py'> (None:None) ^api/repositorio/>"
+[2017-11-10 20:07:17] WARNING [django.request:152] Not Found: /
+[2017-11-10 20:07:17] WARNING [django.server:131] "GET / HTTP/1.1" 404 2465
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2017-11-10 20:07:17] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\repositorio_api\\\\urls.py'> (None:None) ^api/repositorio/>"
+[2017-11-10 20:07:17] WARNING [django.request:152] Not Found: /favicon.ico
+[2017-11-10 20:07:17] WARNING [django.server:131] "GET /favicon.ico HTTP/1.1" 404 2498
+[2017-11-10 20:07:22] DEBUG [django.db.backends:90] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'l241eicyrsisp20pz2p7xafbun3a3s1h' AND "django_session"."expire_date" > '2017-11-11 01:07:22.796683'); args=('l241eicyrsisp20pz2p7xafbun3a3s1h', '2017-11-11 01:07:22.796683')
+[2017-11-10 20:07:22] DEBUG [django.db.backends:90] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = 'aa19e6b5cb564a9c8bdebe3d66e6760e'; args=('aa19e6b5cb564a9c8bdebe3d66e6760e',)
+[2017-11-10 20:07:23] DEBUG [django.template:929] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x014B4150>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: nogami>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x01536290>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04D06EF0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041C0F30>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041C0F70>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6F50>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06790>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CD70>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CDD0>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CF50>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CBD0>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CBF0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CD90>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118C850>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118C630>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CF90>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06CD0>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06870>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CE10>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6DF0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CFB0>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041CB9F0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6F50>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04CF2110>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06E70>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06E30>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06D30>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06930>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06C50>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06D50>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06590>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06990>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06450>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D064F0>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D069D0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06A70>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6DF0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06B90>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'LANGUAGE_CODE': 'es', 'LANGUAGE_BIDI': False}]"
+[2017-11-10 20:07:23] DEBUG [django.template:929] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x014B4150>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: nogami>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x01536290>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04D06EF0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041C0F30>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041C0F70>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6F50>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06790>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CD70>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CDD0>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CF50>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CBD0>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CBF0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CD90>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118C850>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118C630>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CF90>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06CD0>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06870>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CE10>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6DF0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x0118CFB0>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041CB9F0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6F50>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04CF2110>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06E70>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06E30>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06D30>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06930>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06C50>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06D50>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06590>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06990>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06450>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D064F0>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D069D0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06A70>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x041D6DF0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04D06B90>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'LANGUAGE_CODE': 'es', 'LANGUAGE_BIDI': False}]"
+[2017-11-10 20:07:23] DEBUG [django.db.backends:90] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 'aa19e6b5cb564a9c8bdebe3d66e6760e' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('aa19e6b5cb564a9c8bdebe3d66e6760e',)
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /admin/ HTTP/1.1" 200 19871
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[2017-11-10 20:07:23] INFO [django.server:131] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[2017-11-10 20:30:12] DEBUG [django.db.backends:90] (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2017-11-10 20:30:12] DEBUG [django.db.backends:90] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2017-11-10 20:32:32] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\repositorio_api\\\\urls.py'> (None:None) ^api/repositorio/>"
+[2017-11-10 20:32:32] WARNING [django.request:152] Not Found: /
+[2017-11-10 20:32:32] WARNING [django.server:131] "GET / HTTP/1.1" 404 2465
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\django\\\\contrib\\\\admindocs\\\\urls.py'> (None:None) ^admin/doc/>"
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\rest_framework\\\\urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\ve_translipsur\\\\lib\\\\site-packages\\\\oauth2_provider\\\\urls.py'> (None:oauth2_provider) ^o/>"
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\auths_api\\\\urls.py'> (None:None) ^api/auths/>"
+[2017-11-10 20:32:33] DEBUG [django.template:929] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\core\handlers\base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\urls\resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\django\\contrib\\admindocs\\urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from 'E:\\Proyecto2017\\translipsur\\ve_translipsur\\lib\\site-packages\\oauth2_provider\\urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'translipsur_service_apps.auths_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\auths_api\\urls.py'> (None:None) ^api/auths/>], [<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\Proyecto2017\\translipsur\\translipsur_service\\translipsur_service_apps\\repositorio_api\\urls.py'> (None:None) ^api/repositorio/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'translipsur_service_apps.repositorio_api.urls' from 'E:\\\\Proyecto2017\\\\translipsur\\\\translipsur_service\\\\translipsur_service_apps\\\\repositorio_api\\\\urls.py'> (None:None) ^api/repositorio/>"
+[2017-11-10 20:32:33] WARNING [django.request:152] Not Found: /favicon.ico
+[2017-11-10 20:32:33] WARNING [django.server:131] "GET /favicon.ico HTTP/1.1" 404 2498
+[2017-11-10 20:32:37] DEBUG [django.db.backends:90] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'l241eicyrsisp20pz2p7xafbun3a3s1h' AND "django_session"."expire_date" > '2017-11-11 01:32:37.471526'); args=('l241eicyrsisp20pz2p7xafbun3a3s1h', '2017-11-11 01:32:37.471526')
+[2017-11-10 20:32:37] DEBUG [django.db.backends:90] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = 'aa19e6b5cb564a9c8bdebe3d66e6760e'; args=('aa19e6b5cb564a9c8bdebe3d66e6760e',)
+[2017-11-10 20:32:37] DEBUG [django.template:929] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01427150>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: nogami>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x014A6230>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04C2CF70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040E0F10>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040E0F50>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6F30>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x01419670>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0EF0>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0C90>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0D30>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0990>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0AB0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0970>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0CF0>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0AD0>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE050>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE030>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE1B0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0D50>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6DD0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0E70>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040EB9D0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6F30>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04C2C890>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE450>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE610>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE270>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE590>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE3F0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE5B0>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7F0>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE5F0>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7B0>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE650>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7D0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE090>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6DD0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE470>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'LANGUAGE_CODE': 'es', 'LANGUAGE_BIDI': False}]"
+[2017-11-10 20:32:37] DEBUG [django.template:929] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = current[bit]
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\context.py", line 75, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Proyecto2017\translipsur\ve_translipsur\lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x01427150>>, 'request': <WSGIRequest: GET '/admin/'>, 'user': <SimpleLazyObject: <User: nogami>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x014A6230>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x04C2CF70>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040E0F10>, 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040E0F50>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6F30>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x01419670>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0EF0>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0C90>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0D30>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0990>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0AB0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0970>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0CF0>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0AD0>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE050>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE030>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE1B0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0D50>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6DD0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013D0E70>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040EB9D0>, 'app_list': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6F30>, 'app_label': 'auth', 'app_url': '/admin/auth/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x04C2C890>, 'object_name': 'Group', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/group/', 'add_url': '/admin/auth/group/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE450>, 'object_name': 'Permission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auth/permission/', 'add_url': '/admin/auth/permission/add/'}]}, {'name': 'Auths', 'app_label': 'auths', 'app_url': '/admin/auths/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE610>, 'object_name': 'HierarchyType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchytype/', 'add_url': '/admin/auths/hierarchytype/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE270>, 'object_name': 'Hierarchy', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/hierarchy/', 'add_url': '/admin/auths/hierarchy/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE590>, 'object_name': 'Menu', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/menu/', 'add_url': '/admin/auths/menu/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE3F0>, 'object_name': 'Person', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/person/', 'add_url': '/admin/auths/person/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE5B0>, 'object_name': 'UserHierarchyGroup', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchygroup/', 'add_url': '/admin/auths/userhierarchygroup/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7F0>, 'object_name': 'UserHierarchyPermission', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/userhierarchypermission/', 'add_url': '/admin/auths/userhierarchypermission/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE5F0>, 'object_name': 'User', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/auths/user/', 'add_url': '/admin/auths/user/add/'}]}, {'name': 'Django OAuth Toolkit', 'app_label': 'oauth2_provider', 'app_url': '/admin/oauth2_provider/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7B0>, 'object_name': 'AccessToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/accesstoken/', 'add_url': '/admin/oauth2_provider/accesstoken/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE650>, 'object_name': 'Application', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/application/', 'add_url': '/admin/oauth2_provider/application/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE7D0>, 'object_name': 'Grant', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/grant/', 'add_url': '/admin/oauth2_provider/grant/add/'}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE090>, 'object_name': 'RefreshToken', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'add_url': '/admin/oauth2_provider/refreshtoken/add/'}]}, {'name': 'Repositorio', 'app_label': 'repositorio', 'app_url': '/admin/repositorio/', 'has_module_perms': True, 'models': [{'name': 'Alquileres', 'object_name': 'Alquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/alquiler/', 'add_url': '/admin/repositorio/alquiler/add/'}, {'name': 'CargoPersonales', 'object_name': 'CargoPersonal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cargopersonal/', 'add_url': '/admin/repositorio/cargopersonal/add/'}, {'name': 'Clientes', 'object_name': 'Cliente', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/cliente/', 'add_url': '/admin/repositorio/cliente/add/'}, {'name': 'DetalleTarifarios', 'object_name': 'DetalleTarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletarifario/', 'add_url': '/admin/repositorio/detalletarifario/add/'}, {'name': 'DetalleTiempoAlquileres', 'object_name': 'DetalleTiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalletiempoalquiler/', 'add_url': '/admin/repositorio/detalletiempoalquiler/add/'}, {'name': 'DetalleUnidades', 'object_name': 'DetalleUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/detalleunidad/', 'add_url': '/admin/repositorio/detalleunidad/add/'}, {'name': 'Personales', 'object_name': 'Personal', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/personal/', 'add_url': '/admin/repositorio/personal/add/'}, {'name': 'Personas', 'object_name': 'Persona', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/persona/', 'add_url': '/admin/repositorio/persona/add/'}, {'name': 'Proveedores', 'object_name': 'Proveedor', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/proveedor/', 'add_url': '/admin/repositorio/proveedor/add/'}, {'name': 'RecepcionUnidades', 'object_name': 'RecepcionUnidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/recepcionunidad/', 'add_url': '/admin/repositorio/recepcionunidad/add/'}, {'name': 'Rutas', 'object_name': 'Ruta', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/ruta/', 'add_url': '/admin/repositorio/ruta/add/'}, {'name': 'Soats', 'object_name': 'Soat', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/soat/', 'add_url': '/admin/repositorio/soat/add/'}, {'name': 'Tarifarios', 'object_name': 'Tarifario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tarifario/', 'add_url': '/admin/repositorio/tarifario/add/'}, {'name': 'TiempoAlquileres', 'object_name': 'TiempoAlquiler', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/tiempoalquiler/', 'add_url': '/admin/repositorio/tiempoalquiler/add/'}, {'name': 'Unidades', 'object_name': 'Unidad', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/unidad/', 'add_url': '/admin/repositorio/unidad/add/'}, {'name': 'Usuarios', 'object_name': 'Usuario', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/repositorio/usuario/', 'add_url': '/admin/repositorio/usuario/add/'}]}, {'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x040F6DD0>, 'app_label': 'contenttypes', 'app_url': '/admin/contenttypes/', 'has_module_perms': True, 'models': [{'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x013FE470>, 'object_name': 'ContentType', 'perms': {'add': True, 'change': True, 'delete': True}, 'admin_url': '/admin/contenttypes/contenttype/', 'add_url': '/admin/contenttypes/contenttype/add/'}]}], 'LANGUAGE_CODE': 'es', 'LANGUAGE_BIDI': False}]"
+[2017-11-10 20:32:37] DEBUG [django.db.backends:90] (0.000) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 'aa19e6b5cb564a9c8bdebe3d66e6760e' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('aa19e6b5cb564a9c8bdebe3d66e6760e',)
+[2017-11-10 20:32:37] INFO [django.server:131] "GET /admin/ HTTP/1.1" 200 19871
+[2017-11-10 20:32:44] WARNING [django.server:131] "GET /api/auths/localuserinfo/ HTTP/1.1" 401 65
+[2017-11-10 20:32:44] WARNING [django.server:131] "GET /api/auths/usermenu/ HTTP/1.1" 401 65
+[2017-11-10 21:33:03] DEBUG [django.db.backends:90] (0.003) SELECT "repositorio_persona"."id", "repositorio_persona"."nombre", "repositorio_persona"."ape_paterno", "repositorio_persona"."ape_materno", "repositorio_persona"."dni", "repositorio_persona"."ruc", "repositorio_persona"."celular", "repositorio_persona"."tipo_persona", "repositorio_persona"."direccion", "repositorio_persona"."departamento", "repositorio_persona"."provincia", "repositorio_persona"."distrito" FROM "repositorio_persona" WHERE ("repositorio_persona"."id" LIKE '%%' ESCAPE '\' OR "repositorio_persona"."nombre" LIKE '%%' ESCAPE '\'); args=('%%', '%%')
+[2017-11-10 21:33:03] INFO [django.server:131] "GET /api/repositorio/personas/ HTTP/1.1" 200 1136
+[2017-11-10 21:39:26] DEBUG [django.db.backends:90] (0.003) SELECT "repositorio_persona"."id", "repositorio_persona"."nombre", "repositorio_persona"."ape_paterno", "repositorio_persona"."ape_materno", "repositorio_persona"."dni", "repositorio_persona"."ruc", "repositorio_persona"."celular", "repositorio_persona"."tipo_persona", "repositorio_persona"."direccion", "repositorio_persona"."departamento", "repositorio_persona"."provincia", "repositorio_persona"."distrito" FROM "repositorio_persona" WHERE ("repositorio_persona"."id" LIKE '%%' ESCAPE '\' OR "repositorio_persona"."nombre" LIKE '%%' ESCAPE '\'); args=('%%', '%%')
+[2017-11-10 21:39:26] INFO [django.server:131] "GET /api/repositorio/personas/ HTTP/1.1" 200 1136
